@@ -22,19 +22,19 @@ ENV CERT_HOME /certs
 ENV AUTO_UPGRADE 1
 
 #Placeholder
-ENV SYNO_Scheme="http"
-ENV SYNO_Hostname="localhost"
-ENV SYNO_Port="5000"
-ENV SYNO_Username=
-ENV SYNO_Password=
+ENV SYNO_SCHEME="http"
+ENV SYNO_HOSTNAME="localhost"
+ENV SYNO_PORT="5000"
+ENV SYNO_USERNAME=
+ENV SYNO_PASSWORD=
 ENV SYNO_TOTP_SECRET=
 ENV DOMAINS="example.com,*.example.com"
-ENV SYNO_Certificate="synology-acme-cf-test" 
-ENV SYNO_Create=
+ENV SYNO_CERT_NAME="synology-acme-cf-test" 
+ENV SYNO_CERT_CREATE=
 ENV ACME_EMAIL="my@example.com"
-ENV ACEM_TEST=
-ENV CF_Token=
-ENV CF_Account_ID=
+ENV ACEM_TEST=yes
+ENV CF_TOKEN=
+ENV CF_ACCOUNT_ID=
 
 
 RUN curl -OL https://github.com/dacrystal/acme.sh/archive/topic/synology_dsm-otp_code.tar.gz \
